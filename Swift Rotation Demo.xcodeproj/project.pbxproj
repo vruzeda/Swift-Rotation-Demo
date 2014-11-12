@@ -8,45 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		AD88EE241A13FE0600C2F685 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88EE231A13FE0600C2F685 /* AppDelegate.swift */; };
-		AD88EE261A13FE0600C2F685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88EE251A13FE0600C2F685 /* ViewController.swift */; };
-		AD88EE291A13FE0700C2F685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88EE271A13FE0700C2F685 /* Main.storyboard */; };
 		AD88EE2B1A13FE0700C2F685 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD88EE2A1A13FE0700C2F685 /* Images.xcassets */; };
-		AD88EE2E1A13FE0700C2F685 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD88EE2C1A13FE0700C2F685 /* LaunchScreen.xib */; };
-		AD88EE3A1A13FE0700C2F685 /* Swift_Rotation_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88EE391A13FE0700C2F685 /* Swift_Rotation_DemoTests.swift */; };
+		AD88EE4A1A13FE6200C2F685 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88EE441A13FE6200C2F685 /* ViewController.swift */; };
+		AD88EE4B1A13FE6200C2F685 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD88EE461A13FE6200C2F685 /* LaunchScreen.xib */; };
+		AD88EE4C1A13FE6200C2F685 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD88EE481A13FE6200C2F685 /* Main.storyboard */; };
+		AD88EE4F1A14003400C2F685 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88EE4E1A14003400C2F685 /* BaseViewController.swift */; };
+		AD88EE531A1400A500C2F685 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88EE521A1400A500C2F685 /* BaseNavigationController.swift */; };
+		AD88EE581A14011700C2F685 /* UIDevice+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = AD88EE571A14011700C2F685 /* UIDevice+Orientation.m */; };
+		AD88EE5B1A14054C00C2F685 /* PortraitOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88EE5A1A14054C00C2F685 /* PortraitOnlyViewController.swift */; };
+		AD88EE5D1A14059600C2F685 /* LandscapeOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88EE5C1A14059600C2F685 /* LandscapeOnlyViewController.swift */; };
+		AD88EE5F1A1405D600C2F685 /* RotationFreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD88EE5E1A1405D600C2F685 /* RotationFreeViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AD88EE341A13FE0700C2F685 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD88EE161A13FE0600C2F685 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AD88EE1D1A13FE0600C2F685;
-			remoteInfo = "Swift Rotation Demo";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AD88EE1E1A13FE0600C2F685 /* Swift Rotation Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Rotation Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD88EE221A13FE0600C2F685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD88EE231A13FE0600C2F685 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AD88EE251A13FE0600C2F685 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AD88EE281A13FE0700C2F685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD88EE2A1A13FE0700C2F685 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AD88EE2D1A13FE0700C2F685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AD88EE331A13FE0700C2F685 /* Swift Rotation DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Rotation DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD88EE381A13FE0700C2F685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD88EE391A13FE0700C2F685 /* Swift_Rotation_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Rotation_DemoTests.swift; sourceTree = "<group>"; };
+		AD88EE441A13FE6200C2F685 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD88EE471A13FE6200C2F685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AD88EE491A13FE6200C2F685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD88EE4E1A14003400C2F685 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Base/BaseViewController.swift; sourceTree = "<group>"; };
+		AD88EE521A1400A500C2F685 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseNavigationController.swift; path = Base/BaseNavigationController.swift; sourceTree = "<group>"; };
+		AD88EE561A14011700C2F685 /* UIDevice+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIDevice+Orientation.h"; path = "Additions/UIDevice+Orientation.h"; sourceTree = "<group>"; };
+		AD88EE571A14011700C2F685 /* UIDevice+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+Orientation.m"; path = "Additions/UIDevice+Orientation.m"; sourceTree = "<group>"; };
+		AD88EE591A14013200C2F685 /* Swift Rotation Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift Rotation Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD88EE5A1A14054C00C2F685 /* PortraitOnlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitOnlyViewController.swift; sourceTree = "<group>"; };
+		AD88EE5C1A14059600C2F685 /* LandscapeOnlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeOnlyViewController.swift; sourceTree = "<group>"; };
+		AD88EE5E1A1405D600C2F685 /* RotationFreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationFreeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AD88EE1B1A13FE0600C2F685 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD88EE301A13FE0700C2F685 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				AD88EE201A13FE0600C2F685 /* Swift Rotation Demo */,
-				AD88EE361A13FE0700C2F685 /* Swift Rotation DemoTests */,
 				AD88EE1F1A13FE0600C2F685 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				AD88EE1E1A13FE0600C2F685 /* Swift Rotation Demo.app */,
-				AD88EE331A13FE0700C2F685 /* Swift Rotation DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,11 +68,11 @@
 		AD88EE201A13FE0600C2F685 /* Swift Rotation Demo */ = {
 			isa = PBXGroup;
 			children = (
+				AD88EE431A13FE6200C2F685 /* Controllers */,
+				AD88EE451A13FE6200C2F685 /* Views */,
 				AD88EE231A13FE0600C2F685 /* AppDelegate.swift */,
-				AD88EE251A13FE0600C2F685 /* ViewController.swift */,
-				AD88EE271A13FE0700C2F685 /* Main.storyboard */,
+				AD88EE591A14013200C2F685 /* Swift Rotation Demo-Bridging-Header.h */,
 				AD88EE2A1A13FE0700C2F685 /* Images.xcassets */,
-				AD88EE2C1A13FE0700C2F685 /* LaunchScreen.xib */,
 				AD88EE211A13FE0600C2F685 /* Supporting Files */,
 			);
 			path = "Swift Rotation Demo";
@@ -95,21 +86,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AD88EE361A13FE0700C2F685 /* Swift Rotation DemoTests */ = {
+		AD88EE431A13FE6200C2F685 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AD88EE391A13FE0700C2F685 /* Swift_Rotation_DemoTests.swift */,
-				AD88EE371A13FE0700C2F685 /* Supporting Files */,
+				AD88EE541A1400D200C2F685 /* Additions */,
+				AD88EE4D1A14001A00C2F685 /* Base */,
+				AD88EE5C1A14059600C2F685 /* LandscapeOnlyViewController.swift */,
+				AD88EE5A1A14054C00C2F685 /* PortraitOnlyViewController.swift */,
+				AD88EE5E1A1405D600C2F685 /* RotationFreeViewController.swift */,
+				AD88EE441A13FE6200C2F685 /* ViewController.swift */,
 			);
-			path = "Swift Rotation DemoTests";
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		AD88EE371A13FE0700C2F685 /* Supporting Files */ = {
+		AD88EE451A13FE6200C2F685 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AD88EE381A13FE0700C2F685 /* Info.plist */,
+				AD88EE461A13FE6200C2F685 /* LaunchScreen.xib */,
+				AD88EE481A13FE6200C2F685 /* Main.storyboard */,
 			);
-			name = "Supporting Files";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD88EE4D1A14001A00C2F685 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				AD88EE521A1400A500C2F685 /* BaseNavigationController.swift */,
+				AD88EE4E1A14003400C2F685 /* BaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		AD88EE541A1400D200C2F685 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				AD88EE561A14011700C2F685 /* UIDevice+Orientation.h */,
+				AD88EE571A14011700C2F685 /* UIDevice+Orientation.m */,
+			);
+			name = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,24 +146,6 @@
 			productReference = AD88EE1E1A13FE0600C2F685 /* Swift Rotation Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AD88EE321A13FE0700C2F685 /* Swift Rotation DemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD88EE401A13FE0700C2F685 /* Build configuration list for PBXNativeTarget "Swift Rotation DemoTests" */;
-			buildPhases = (
-				AD88EE2F1A13FE0700C2F685 /* Sources */,
-				AD88EE301A13FE0700C2F685 /* Frameworks */,
-				AD88EE311A13FE0700C2F685 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AD88EE351A13FE0700C2F685 /* PBXTargetDependency */,
-			);
-			name = "Swift Rotation DemoTests";
-			productName = "Swift Rotation DemoTests";
-			productReference = AD88EE331A13FE0700C2F685 /* Swift Rotation DemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +157,6 @@
 				TargetAttributes = {
 					AD88EE1D1A13FE0600C2F685 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					AD88EE321A13FE0700C2F685 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = AD88EE1D1A13FE0600C2F685;
 					};
 				};
 			};
@@ -182,7 +174,6 @@
 			projectRoot = "";
 			targets = (
 				AD88EE1D1A13FE0600C2F685 /* Swift Rotation Demo */,
-				AD88EE321A13FE0700C2F685 /* Swift Rotation DemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,16 +183,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD88EE291A13FE0700C2F685 /* Main.storyboard in Resources */,
-				AD88EE2E1A13FE0700C2F685 /* LaunchScreen.xib in Resources */,
+				AD88EE4C1A13FE6200C2F685 /* Main.storyboard in Resources */,
+				AD88EE4B1A13FE6200C2F685 /* LaunchScreen.xib in Resources */,
 				AD88EE2B1A13FE0700C2F685 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD88EE311A13FE0700C2F685 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,44 +196,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD88EE261A13FE0600C2F685 /* ViewController.swift in Sources */,
+				AD88EE5F1A1405D600C2F685 /* RotationFreeViewController.swift in Sources */,
+				AD88EE5D1A14059600C2F685 /* LandscapeOnlyViewController.swift in Sources */,
+				AD88EE5B1A14054C00C2F685 /* PortraitOnlyViewController.swift in Sources */,
+				AD88EE531A1400A500C2F685 /* BaseNavigationController.swift in Sources */,
+				AD88EE4A1A13FE6200C2F685 /* ViewController.swift in Sources */,
 				AD88EE241A13FE0600C2F685 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AD88EE2F1A13FE0700C2F685 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD88EE3A1A13FE0700C2F685 /* Swift_Rotation_DemoTests.swift in Sources */,
+				AD88EE581A14011700C2F685 /* UIDevice+Orientation.m in Sources */,
+				AD88EE4F1A14003400C2F685 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		AD88EE351A13FE0700C2F685 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AD88EE1D1A13FE0600C2F685 /* Swift Rotation Demo */;
-			targetProxy = AD88EE341A13FE0700C2F685 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		AD88EE271A13FE0700C2F685 /* Main.storyboard */ = {
+		AD88EE461A13FE6200C2F685 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AD88EE281A13FE0700C2F685 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AD88EE2C1A13FE0700C2F685 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AD88EE2D1A13FE0700C2F685 /* Base */,
+				AD88EE471A13FE6200C2F685 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		AD88EE481A13FE6200C2F685 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD88EE491A13FE6200C2F685 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -336,9 +310,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift Rotation Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift Rotation Demo/Swift Rotation Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,43 +323,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift Rotation Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		AD88EE411A13FE0700C2F685 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Swift Rotation DemoTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Rotation Demo.app/Swift Rotation Demo";
-			};
-			name = Debug;
-		};
-		AD88EE421A13FE0700C2F685 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Swift Rotation DemoTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Rotation Demo.app/Swift Rotation Demo";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift Rotation Demo/Swift Rotation Demo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -403,14 +348,6 @@
 			buildConfigurations = (
 				AD88EE3E1A13FE0700C2F685 /* Debug */,
 				AD88EE3F1A13FE0700C2F685 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		AD88EE401A13FE0700C2F685 /* Build configuration list for PBXNativeTarget "Swift Rotation DemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AD88EE411A13FE0700C2F685 /* Debug */,
-				AD88EE421A13FE0700C2F685 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
