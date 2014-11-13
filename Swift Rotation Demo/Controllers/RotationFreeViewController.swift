@@ -13,7 +13,7 @@ class RotationFreeViewController: BaseViewController {
     override func supportedInterfaceOrientations() -> Int {
         return Int(UIInterfaceOrientationMask.AllButUpsideDown.rawValue)
     }
-    
+
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         return UIInterfaceOrientation.Portrait
     }

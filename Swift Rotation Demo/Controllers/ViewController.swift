@@ -20,6 +20,5 @@ class ViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
 

@@ -13,23 +13,23 @@ class BaseViewController: UIViewController {
     override func shouldAutorotate() -> Bool {
         return true
     }
-    
+
     override func supportedInterfaceOrientations() -> Int {
         return Int(UIInterfaceOrientationMask.Portrait.rawValue)
     }
-    
+
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         return UIInterfaceOrientation.Portrait
     }
-    
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         if (!isCurrentOrientationSupported()) {
             UIDevice.currentDevice().changeOrientation(preferredDeviceOrientationForPresentation())
         }
     }
-    
+
     private func isCurrentOrientationSupported() -> Bool {
         var deviceInterfaceOrientation : UIInterfaceOrientation
         switch (UIDevice.currentDevice().orientation) {
@@ -46,7 +46,7 @@ class BaseViewController: UIViewController {
         }
         return (Int(deviceInterfaceOrientation.rawValue) & supportedInterfaceOrientations()) != 0
     }
-    
+
     private func preferredDeviceOrientationForPresentation() -> UIDeviceOrientation {
         switch (preferredInterfaceOrientationForPresentation()) {
         case UIInterfaceOrientation.Portrait:

@@ -13,7 +13,7 @@ class BaseNavigationController: UINavigationController {
     override func supportedInterfaceOrientations() -> Int {
         return topViewController.supportedInterfaceOrientations()
     }
-    
+
     override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
         return topViewController.preferredInterfaceOrientationForPresentation()
     }
