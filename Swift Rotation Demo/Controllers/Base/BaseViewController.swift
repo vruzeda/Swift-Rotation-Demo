@@ -31,20 +31,20 @@ class BaseViewController: UIViewController {
     }
 
     private func isCurrentOrientationSupported() -> Bool {
-        var deviceInterfaceOrientation : UIInterfaceOrientation
+        var deviceInterfaceOrientationMask : UIInterfaceOrientationMask
         switch (UIDevice.currentDevice().orientation) {
         case UIDeviceOrientation.Portrait:
-            deviceInterfaceOrientation = UIInterfaceOrientation.Portrait
+            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.Portrait
         case UIDeviceOrientation.PortraitUpsideDown:
-            deviceInterfaceOrientation = UIInterfaceOrientation.PortraitUpsideDown
+            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.PortraitUpsideDown
         case UIDeviceOrientation.LandscapeLeft:
-            deviceInterfaceOrientation = UIInterfaceOrientation.LandscapeLeft
+            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.LandscapeLeft
         case UIDeviceOrientation.LandscapeRight:
-            deviceInterfaceOrientation = UIInterfaceOrientation.LandscapeRight
+            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.LandscapeRight
         default:
-            deviceInterfaceOrientation = UIInterfaceOrientation.Portrait
+            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.Portrait
         }
-        return (Int(deviceInterfaceOrientation.rawValue) & supportedInterfaceOrientations()) != 0
+        return (Int(deviceInterfaceOrientationMask.rawValue) & supportedInterfaceOrientations()) != 0
     }
 
     private func preferredDeviceOrientationForPresentation() -> UIDeviceOrientation {
