@@ -10,12 +10,12 @@ import UIKit
 
 class BaseNavigationController: UINavigationController {
 
-    override func supportedInterfaceOrientations() -> Int {
-        return topViewController.supportedInterfaceOrientations()
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return topViewController!.supportedInterfaceOrientations
     }
 
-    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-        return topViewController.preferredInterfaceOrientationForPresentation()
+    override var preferredInterfaceOrientationForPresentation : UIInterfaceOrientation {
+        return topViewController!.preferredInterfaceOrientationForPresentation
     }
 
 }
