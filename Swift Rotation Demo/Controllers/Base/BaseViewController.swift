@@ -10,55 +10,55 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-    override func shouldAutorotate() -> Bool {
+    override var shouldAutorotate : Bool {
         return true
     }
 
-    override func supportedInterfaceOrientations() -> Int {
-        return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
     }
 
-    override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
-        return UIInterfaceOrientation.Portrait
+    override var preferredInterfaceOrientationForPresentation : UIInterfaceOrientation {
+        return UIInterfaceOrientation.portrait
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         if (!isCurrentOrientationSupported()) {
-            UIDevice.currentDevice().changeOrientation(preferredDeviceOrientationForPresentation())
+            UIDevice.current.changeOrientation(preferredDeviceOrientationForPresentation())
         }
     }
 
-    private func isCurrentOrientationSupported() -> Bool {
+    fileprivate func isCurrentOrientationSupported() -> Bool {
         var deviceInterfaceOrientationMask : UIInterfaceOrientationMask
-        switch (UIDevice.currentDevice().orientation) {
-        case UIDeviceOrientation.Portrait:
-            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.Portrait
-        case UIDeviceOrientation.PortraitUpsideDown:
-            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.PortraitUpsideDown
-        case UIDeviceOrientation.LandscapeLeft:
-            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.LandscapeLeft
-        case UIDeviceOrientation.LandscapeRight:
-            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.LandscapeRight
+        switch (UIDevice.current.orientation) {
+        case UIDeviceOrientation.portrait:
+            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.portrait
+        case UIDeviceOrientation.portraitUpsideDown:
+            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.portraitUpsideDown
+        case UIDeviceOrientation.landscapeLeft:
+            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.landscapeLeft
+        case UIDeviceOrientation.landscapeRight:
+            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.landscapeRight
         default:
-            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.Portrait
+            deviceInterfaceOrientationMask = UIInterfaceOrientationMask.portrait
         }
-        return (Int(deviceInterfaceOrientationMask.rawValue) & supportedInterfaceOrientations()) != 0
+        return (Int(deviceInterfaceOrientationMask.rawValue) & Int(supportedInterfaceOrientations.rawValue)) != 0
     }
 
-    private func preferredDeviceOrientationForPresentation() -> UIDeviceOrientation {
-        switch (preferredInterfaceOrientationForPresentation()) {
-        case UIInterfaceOrientation.Portrait:
-            return UIDeviceOrientation.Portrait
-        case UIInterfaceOrientation.PortraitUpsideDown:
-            return UIDeviceOrientation.PortraitUpsideDown
-        case UIInterfaceOrientation.LandscapeLeft:
-            return UIDeviceOrientation.LandscapeLeft
-        case UIInterfaceOrientation.LandscapeRight:
-            return UIDeviceOrientation.LandscapeRight
+    fileprivate func preferredDeviceOrientationForPresentation() -> UIDeviceOrientation {
+        switch (preferredInterfaceOrientationForPresentation) {
+        case UIInterfaceOrientation.portrait:
+            return UIDeviceOrientation.portrait
+        case UIInterfaceOrientation.portraitUpsideDown:
+            return UIDeviceOrientation.portraitUpsideDown
+        case UIInterfaceOrientation.landscapeLeft:
+            return UIDeviceOrientation.landscapeLeft
+        case UIInterfaceOrientation.landscapeRight:
+            return UIDeviceOrientation.landscapeRight
         default:
-            return UIDeviceOrientation.Portrait
+            return UIDeviceOrientation.portrait
         }
     }
 
